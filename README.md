@@ -11,14 +11,29 @@ git clone https://github.com/mumuSeaosn2/Backend.git
 cd Backend
 ```
 
-3.change the db.config and delete the word .example in name
+3.make .env file (fill the blank)
+```
+COOKIE_SECRET=
+DB_HOST=
+DB_USERNAME=
+DB_PASSWORD=
+DB_DATABASE=
+DB_PORT=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+```
 
 4.run command for docker
 ```bash
 docker compose up -d --build
 ```
 
-5.check out http://localhost:3000/api/docs/
+5. open docker api container cli and run this command
+```
+yarn add dotenv
+```
+
+6.check out http://localhost:3000/api/docs/
 
 ## how to check db status
 
